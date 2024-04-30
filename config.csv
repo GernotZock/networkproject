@@ -1,0 +1,8 @@
+Variable name, Value, Description
+num_CCs,10,The number of CCs
+num_users,100,The number of consumers
+rs_model,AntiPA,The RS model used (general/AntiPA/UR/PA/ExtremePA/ExtremeAntiPA)
+alpha,-1,"If the RS model is in the general form it gives the importance to popularity (0 -> UR, 1 -> PA, -1 -> antiPA)"
+num_steps,1000,The number of steps in the simulation. 0 --> to convergence; X>0 --> x sets of recommendations to users
+random_seed,87,"The random seed used to run the simulatulation (i.e., interactions consumers - CCs)"
+record_at_timesteps,"[50, 100, 250, 500, 1000]",We can record relevant metrics at intermediate timesteps too (not only at convergence/end of simulation). This parameter captures at which timesteps we want to record them.
